@@ -1,0 +1,169 @@
+$roboto-font-path: '~materialize-css/fonts/roboto/';
+@import "~materialize-css/sass/materialize.scss";
+
+html, body, .app, .app-container {
+  height: 100%;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+nav {
+  background-color: #26a69a;
+  padding: 0 10px;
+  z-index: 5;
+
+  .brand-logo.left {
+    left: 0;
+  }
+
+  .brand-logo {
+    font-size: 1.5rem;
+  }
+
+}
+
+.login {
+  padding-top: 20px;
+}
+
+.login .hint, .register .hint {
+  color: #aaa;
+}
+
+.login-error {
+  color: red;
+}
+
+.dashboard {
+  margin-top: 20px;
+}
+
+.card.horizontal {
+  max-height: 128px;
+
+  .card-image {
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+
+    img {
+      max-width: none;
+    }
+
+  }
+
+
+}
+
+.card .card-content {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.dashboard .card .card-content {
+  padding: 0;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.ocr-result img{
+  width: 100%;
+}
+
+.toolbar {
+  overflow: auto;
+  padding-top: 10px;
+  text-align: center;
+
+  .btn {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    width: 200px;
+  }
+}
+
+.fb-btn {
+  width: 150px;
+  cursor: pointer;
+}
+
+.ocr-result {
+
+  .load-block {
+    width: 100%;
+    height: calc(100% - 56px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 56px;
+    bottom: 0;
+    z-index: 5;
+    display: block;
+    text-align: center;
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: calc(50% - 64px);
+    transform: translateY(-50%);
+  }
+
+  .loader-info {
+    position: relative;
+    top: calc(50% - 64px);
+    transform: translateY(-50%);
+  }
+
+}
+
+.load-block {
+  z-index: 5;
+  display: block;
+  text-align: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 601px) {
+  .ocr-result .load-block {
+      height: calc(100% - 64px);
+      top: 64px;
+  }
+} 
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.p-10 {
+  padding: 10px;
+}

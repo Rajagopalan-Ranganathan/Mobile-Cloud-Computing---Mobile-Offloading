@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_mode_group"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local"
+            />
+        <RadioButton android:id="@+id/radio_remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remote"
+            />
+        <RadioButton android:id="@+id/radio_bench"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Benchmark"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/fb_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/fb_button"
+        android:textStyle="bold" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/camera_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/camera_button"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/gallery_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/gallery_button"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/rv"
+    >
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

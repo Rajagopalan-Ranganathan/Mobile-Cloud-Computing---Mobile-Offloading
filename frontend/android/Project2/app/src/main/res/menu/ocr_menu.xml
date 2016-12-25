@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/tb_Save"
+    android:title="Save"
+    app:showAsAction="never"
+    ></item>
+    <item
+        android:id="@+id/tb_Preview"
+        android:title="Preview Image"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/tb_Logout"
+        android:title="Log Out"
+        app:showAsAction="never"
+        ></item>
+
+    <!--<item-->
+        <!--android:id="@+id/tb_retake"-->
+        <!--android:title="Retake"-->
+        <!--app:showAsAction="never"-->
+        <!--&gt;</item>-->
+</menu>

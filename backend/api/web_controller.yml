@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: web
+  name: web-controller
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: web
+    spec:
+      containers:
+      - image: gcr.io/mcc-2016-g10-p2/teodor/mcc2
+        imagePullPolicy: Always
+        name: web
+        ports:
+        - containerPort: 8080
+          name: http-server
